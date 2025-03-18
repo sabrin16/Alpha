@@ -51,6 +51,7 @@
     --text-color: var(--dark-400);
     --text-mutod-color: var(--gray-800);
     --text-extra-mutod-color: var(--gray-700);
+    --background-color: var(--white-200);
     --headline-color: var(--dark-100);
     --border-color: var(--gray-500);
     --border-focus-color: var(--blue-accent);
@@ -619,7 +620,7 @@ input[type="checkbox"] {
 
 /* modal */
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: var(--modal-screen-background-color);
@@ -648,6 +649,14 @@ input[type="checkbox"] {
 
 }
 
+#addMemberModal .modal-content {
+    width: 550px;
+}
+
+#editMemberModal .modal-content {
+    width: 550px;
+}
+
 #projects {
 
 }
@@ -660,10 +669,6 @@ input[type="checkbox"] {
 
 #addClientModal .modal-content {
     width: 550px;
-}
-
-#editClientModal {
-    display: none;
 }
 
 #editClientModal .modal-content {

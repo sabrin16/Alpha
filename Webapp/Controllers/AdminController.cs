@@ -21,24 +21,4 @@ public class AdminController : Controller
     {
         return View();
     }
-
-    [HttpPost]
-
-    public IActionResult AddClient(AddClientForm form)
-    {
-        if (!ModelState.IsValid)
-            return RedirectToAction("Client");
-
-        return View();
-    }
-
-    [HttpPost]
-
-    public IActionResult EditClient(AddClientForm form)
-    {
-        if (!ModelState.IsValid)
-            return RedirectToAction("Client");
-
-        return View();
-    }
 }
