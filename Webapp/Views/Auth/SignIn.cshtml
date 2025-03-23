@@ -1,0 +1,28 @@
+﻿@model UserSignInForm
+
+@{
+	ViewData["Title"] = "Sign In";
+}
+
+<div id="signIn" class="container">
+	<form id="signin-form" asp-action="SignIn" asp-controller="Auth" method="post" novalidate>
+
+		<input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
+
+		<div class="form-group">
+		    <input asp-for="Email" />
+			<span asp-validation-for="Email"></span>
+		</div>
+
+		<div class="form-group">
+			<label asp-for="Password"></label>
+		    <input asp-for="Password" />
+		</div>
+
+		<div class="form-group">
+		     @ViewBag.ErrorMessage
+		</div>
+
+		<button type="submit" class="btn btn-login">Sign In</button>
+	</form>
+</div>

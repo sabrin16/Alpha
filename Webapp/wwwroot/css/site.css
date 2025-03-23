@@ -674,3 +674,40 @@ input[type="checkbox"] {
 #editClientModal .modal-content {
     width: 550px;
 }
+
+/* sections */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#signup {
+    width: 550px;
+    margin: 2rem auto;
+}
+
+    #signup form {
+        padding: 2rem;
+    }
+
+    #signup form .btn-submit {
+        display: grid;
+        width: 100%;
+    }
+
+
+#signin {
+    width: 550px;
+    margin: 2rem auto;
+}
+
+    #signin form {
+        padding: 2rem;
+    }
+
+        #signin form .btn-login {
+            display: grid;
+            width: 100%;
+        }

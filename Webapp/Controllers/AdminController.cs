@@ -1,8 +1,10 @@
 ﻿using Business.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Webapp.Controllers;
 
+[Authorize]
 [Route("admin")]
 
 public class AdminController : Controller
